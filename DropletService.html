@@ -1,0 +1,86 @@
+<!---->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <!--适配让页面随着手机自动适配比例user-scalable=no不让内容随着手机滑动而变化-->
+    <!--用来链接外部资源用的标签注意相对路径和绝对路径-->
+    <link rel="short icon" href="Resource/Resource/icon.png">
+    <link rel="stylesheet" href="ExternalStyle.css">
+    <!--注意图片在哪个文件夹下-->
+    <title>DropletService吴世春实训项目</title>
+
+    <style>
+        ul
+        {
+            display: table;
+            width: 100%;
+            background: white;
+            height: 100px;
+           margin-bottom: 10px;
+        }
+        ul li{
+            display: table-cell;
+            width: 33.3%;
+            text-align: center ;
+            vertical-align: middle;
+        }
+        ul li span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>小滴服务</span>
+    </header>
+    <section class="DS_second_section">
+        <img  id="bannerImg" src="Resource/Resource/banner-1.png" alt="请检查网络">
+
+    </section>
+    <script>
+        var  imgNumber =1;
+        var  bannerImg =document.getElementById("bannerImg");
+        function changeImg(){
+            imgNumber++;
+            if (imgNumber>3){
+                imgNumber=1;
+            }
+            bannerImg.src="Resource/Resource/banner-"+ imgNumber+".png";
+        }
+        setInterval(changeImg,3000);
+    </script>
+    <!---->
+    <!--<section class="R_section">-->
+        <!--<img src="Resource/Resource/banner1.png" alt=""  >-->
+    <!--</section>-->
+    <sectin>
+        <!--ul li无序列表标签-->
+        <ul>
+             <li><img src="Resource/Resource/index1.png" alt=""><span>企业项目</span></li>
+             <li><img src="Resource/Resource/index2.png" alt=""><span>平台风采</span></li>
+             <li><img src="Resource/Resource/index3.png" alt=""><span>报名流程</span></li>
+        </ul>
+
+
+        <ul>
+             <li><img src="Resource/Resource/index4.png" alt=""><span>客户管理</span></li>
+             <li><img src="Resource/Resource/index5.png" alt=""><span>账务管理</span></li>
+             <li><img src="Resource/Resource/index6.png" alt=""><span>新闻公告</span></li>
+        </ul>
+        <ul>
+             <li><img src="Resource/Resource/index7.png" alt=""><span>工程案例</span></li>
+             <li><img src="Resource/Resource/index8.png" alt=""><span>修改密码</span></li>
+             <li><img src="Resource/Resource/index9.png" alt=""><span>会员注册</span></li>
+        </ul>
+    </sectin>
+<footer>
+    <a href="DropletService.html"><img src="Resource/Resource/nav11.png" alt=""><span style="color: red">小滴服务</span></a>
+    <a href="DiamondsEntrepreneur.html"><img src="Resource/Resource/nav20.png" alt=""><span>企业项目</span></a>
+    <a href="ServiceProcedure.html"><img src="Resource/Resource/nav30.png" alt=""><span>服务流程</span></a>
+    <a href="PlatformStyle.html"><img src="Resource/Resource/nav40.png" alt=""><span>平台风采</span></a>
+    <a href="Mydroplet.html"><img src="Resource/Resource/nav50.png" alt=""><span>我的小滴</span></a>
+</footer>
+</body>
+</html>

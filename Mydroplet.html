@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="ExternalStyle.css">
+    <link rel="short icon" href="Resource/Resource/icon.png">
+    <title>吴世春的客户</title>
+</head>
+<style>
+
+    .MD_external_div1 {
+        position: relative;
+    }
+    .MD_inner_div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 66px;
+        height: 120px;
+        margin-left: -33px;
+        margin-top: -60px;
+    }
+    .MD_inner_div span{
+        display: block;
+
+    }
+    .MD_inner_div button{
+        background: rgb(32,131,204);
+        width: 66px;
+        height: 25px;
+    }
+    .MD_bottom_div{
+       /* background-color: blue;
+        height: 50px;*/
+        width: 100%;
+    }
+    .MD_bottom_inner_div{
+        width: 90%;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #dddddd;
+        background-color: white;
+        border-radius: 5px;
+        margin: 10px auto;
+    }
+    .MD_left_img{
+        float: left;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 15px;
+
+    }
+    .MD_right_img{
+        float: right;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+</style>
+<body>
+<script>
+    var down=function () {
+        window.localStorage.removeItem("userName");//删除数据
+        window.location.href="Login.html";
+    }
+</script>
+<header>
+    <span>我的小滴 </span>
+</header>
+
+<div  class="MD_external_div1">
+    <img class="MD_bg_img" src="Resource/Resource/banner5.png" alt="" style="width: 100%;">
+    <div class="MD_inner_div">
+        <img src="Resource/Resource/head.png" alt="">
+        <span id="M_userName">华杉科技</span>
+        <script>
+            document.getElementById("MD_userName").innerHTML=window.localStorage.getItem("userName")
+        </script>
+        <button id="MD_btn">退出登录</button>
+        <script>
+            var btn=document.querySelector("#MD_btn");
+            btn.onclick=function ()
+            {
+                window.localStorage.removeItem("userName");
+                window.location.href="Login.html"
+            }
+        </script>
+    </div>
+</div>
+
+</script>
+<div class="MD_bottom_div">
+    <div class="MD_bottom_inner_div">
+        <img class="MD_left_img" src="Resource/Resource/gr_1.png" alt="">
+        <span>我的客户</span>
+        <img class="MD_right_img" src="Resource/Resource/jt.png" alt="">
+    </div>
+</div>
+<div class="MD_bottom_div">
+    <div class="MD_bottom_inner_div">
+        <img class="MD_left_img" src="Resource/Resource/gr_1.png" alt="">
+        <span>我的客户</span>
+        <img class="MD_right_img" src="Resource/Resource/jt.png" alt="">
+    </div>
+</div>
+<div class="MD_bottom_div">
+    <div class="MD_bottom_inner_div">
+        <img class="MD_left_img" src="Resource/Resource/gr_1.png" alt="">
+        <span>我的客户</span>
+        <img class="MD_right_img" src="Resource/Resource/jt.png" alt="">
+    </div>
+</div>
+<div class="MD_bottom_div">
+    <div class="MD_bottom_inner_div">
+        <img class="MD_left_img" src="Resource/Resource/gr_1.png" alt="">
+        <span>我的客户</span>
+        <img class="MD_right_img" src="Resource/Resource/jt.png" alt="">
+    </div>
+</div>
+
+<footer>
+    <a href="DropletService.html"><img src="Resource/Resource/nav10.png" alt=""><span>小滴服务</span></a>
+    <a href="DiamondsEntrepreneur.html"><img src="Resource/Resource/nav20.png" alt=""><span>企业项目</span></a>
+    <a href="ServiceProcedure.html"><img src="Resource/Resource/nav30.png" alt=""><span>服务流程</span></a>
+    <a href="PlatformStyle.html"><img src="Resource/Resource/nav40.png" alt=""><span>平台风采</span></a>
+    <a href="Mydroplet.html"><img src="Resource/Resource/nav51.png" alt=""><span style="color: red">我的小滴</span></a>
+</footer>
+</body>
+</html>
